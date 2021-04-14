@@ -1,0 +1,10 @@
+dubbo:
+  application:
+    name: user-server
+  registry:
+    protocol: zookeeper
+    address: 127.0.0.1:2181
+  scan:
+    base-packages: com.zb.service
+server:
+  port: 8082

@@ -1,0 +1,19 @@
+#dubbo 配置
+dubbo:
+  #服务名
+  application:
+    name: order-server
+  #dubbo注册的端口..
+  protocol:
+    name: dubbo
+    port: 20882
+  #注册中心的配置
+  registry:
+    protocol: zookeeper
+    address: 127.0.0.1:2181
+  #扫描包下注解！
+  scan:
+    base-packages: com.zb.service
+#配置Boot程序服务端口
+server:
+  port: 8003
